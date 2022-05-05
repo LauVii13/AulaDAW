@@ -1,0 +1,52 @@
+//tem listener tmb mas nn tem aqui
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <script type="text/javascript">
+            function gravar() {
+                sessionStorage.setItem(
+                    "ra",
+                    document.getElementById("ra").value
+                );
+
+                alert("RA gravado.");
+                document.getElementById("ra").value = "";
+            }
+
+            function ler() {
+                var obj = sessionStorage.getItem("ra");
+
+                if (obj != null) {
+                    alert(obj);
+                } else {
+                    alert("A chave procurada não existe no sessionStorage!");
+                }
+            }
+
+            function remover() {
+                sessionStorage.removeItem("ra");
+                alert("A chave RA foi removida.");
+            }
+        </script>
+    </head>
+    <body>
+        <h1>SessionStorage</h1>
+
+        <form>
+            <span>RA:</span>
+            <br />
+            <input type="text" id="ra" />
+            <button type="button" onclick="gravar();">Gravar</button>
+            <hr />
+            <button type="button" onclick="ler();">Ler</button>
+            <hr />
+            <button type="button" onclick="remover();">Remover RA</button>
+        </form>
+    </body>
+</html>

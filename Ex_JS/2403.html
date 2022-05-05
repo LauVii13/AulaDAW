@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Validação de formulários</title>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </head>
+
+    <script language="JavaScript">
+        function validar(qual) {
+            if (qual == "PF") {
+                document.getElementById("tPF").style.display = "inline";
+                document.getElementById("tPJ").style.display = "none";
+                document.getElementById("jooj").style.display = "inline";
+            }
+
+            if (qual == "PJ") {
+                document.getElementById("tPF").style.display = "none";
+                document.getElementById("tPJ").style.display = "inline";
+                document.getElementById("jooj").style.display = "inline";
+            }
+        }
+
+        function enviardados() {
+            document.getElementById("msg").style.color = "red";
+
+            if (
+                document.dados.tx_nome.value == "" ||
+                document.dados.tx_nome.value.length < 3
+            ) {
+                swal({
+                    title: "Good job!",
+                    text: "You clicked the button!",
+                    icon: "success",
+                    button: "Aww yiss!",
+                });
+                document.dados.tx_nome.focus();
+                return false;
+            }
+
+            if (
+                document.dados.tx_email.value == "" ||
+                document.dados.tx_email.value.indexOf("@") == -1 ||
+                document.dados.tx_email.value.indexOf(".") == -1
+            ) {
+                document.getElementById("msg").textContent =
+                    "Preencha campo E-MAIL corretamente!";
+                document.dados.tx_email.focus();
+                return false;
+            }
+
+            if (document.dados.tx_mensagem.value == "") {
+                document.getElementById("msg").textContent =
+                    "Preencha o campo MENSAGEM!";
+                document.dados.tx_mensagem.focus();
+                return false;
+            }
+
+            if (document.dados.tx_mensagem.value.length < 20) {
+                document.getElementById("msg").textContent =
+                    "É necessario preencher o campo MENSAGEM com mais de 50 caracteres!";
+                document.dados.tx_mensagem.focus();
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+    <body>
+        <div id="msg"></div>
+
+        <br />
+
+        <form action="" method="post" name="dados" onSubmit="enviardados();">
+            Type:<br />
+            <input
+                type="radio"
+                id="PF"
+                title="PF"
+                value="PF"
+                name="P"
+                onclick="validar(this.value);"
+            />
+            PF
+            <input
+                type="radio"
+                id="PJ"
+                title="PJ"
+                value="PJ"
+                name="P"
+                onclick="validar(this.value);"
+            />
+            PJ
+
+            <br /><br />
+
+            <div id="tPF" style="display: none">
+                CPF:<br />
+                <input
+                    type="text"
+                    name="tx_cpf"
+                    id="tx_cpf"
+                    size="52"
+                    maxlength="150"
+                />
+                <br /><br />
+                Nome Completo:<br />
+                <input
+                    type="text"
+                    name="tx_nome"
+                    id="tx_nome"
+                    size="52"
+                    maxlength="150"
+                />
+                <br /><br />
+            </div>
+
+            <div id="tPJ" style="display: none">
+                CNPJ:<br />
+                <input
+                    type="text"
+                    name="tx_cnpj"
+                    id="tx_cnpj"
+                    size="52"
+                    maxlength="150"
+                />
+                <br /><br />
+                Nome Social:<br />
+                <input
+                    type="text"
+                    name="tx_nome"
+                    id="tx_nome"
+                    size="52"
+                    maxlength="150"
+                />
+                <br /><br />
+            </div>
+
+            <div id="jooj" style="display: none">
+                E-mail:<br />
+                <input
+                    type="text"
+                    name="tx_email"
+                    id="tx_email"
+                    size="52"
+                    maxlength="150"
+                />
+
+                <br /><br />
+
+                Mensagem:<br />
+                <textarea
+                    name="tx_mensagem"
+                    cols="53"
+                    rows="8"
+                    id="tx_mensagem"
+                ></textarea>
+
+                <br /><br />
+
+                <input name="Submit" type="submit" value="Enviar dados" />
+
+                <input name="Reset" type="reset" value="Redefinir" />
+            </div>
+        </form>
+    </body>
+</html>

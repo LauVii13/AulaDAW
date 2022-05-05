@@ -1,0 +1,100 @@
+s<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Document</title>
+
+        <script language="JavaScript">
+            var i = 0;
+            var fs = 0;
+            var cor = [
+                "black",
+                "blue",
+                "yellow",
+                "red",
+                "orange",
+                "lightgreen",
+                "pink",
+                "purple",
+                "lightgray",
+            ];
+
+            function ran(min, max) {
+                return Math.random() * (max - min) + min;
+            }
+
+            function cc() {
+                var miC = 0,
+                    maC = 0;
+
+                while (cor[maC] != null) {
+                    maC++;
+                }
+                //maC--;
+
+                var num = ran(miC, maC);
+
+                num = parseInt(num);
+
+                console.log(cor[num]);
+
+                return cor[num];
+            }
+
+            function fontSize() {
+                fs++;
+                var pixel = fs + "px";
+                console.log(pixel);
+                return pixel;
+            }
+
+            function lista() {
+                var eleLi = document.querySelectorAll("li");
+
+                for (var i = 0; i <= eleLi.length; i++) {
+                    alert(eleLi[i].textContent);
+                }
+            }
+
+            function btn() {
+                var lista = document.querySelector("ul");
+                var txt = document.querySelector("input").value;
+                var ele = document.createElement("li");
+
+                ele.innerHTML = txt;
+                ele.style["color"] = cc();
+                ele.style["font-size"] = fontSize();
+
+                lista.appendChild(ele);
+
+                if (i == 0) {
+                    lista.setAttribute("type", "circle");
+                    i++;
+                } else {
+                    lista.setAttribute("type", "square");
+                    i = 0;
+                }
+            }
+        </script>
+    </head>
+
+    <body onload="cc();">
+        <button onclick="btn();" id="b1">eu so um botao</button>
+        <button onclick="lista();" id="b1">eu so um botao</button>
+
+        <br /><br />
+
+        <input type="text" />
+
+        <br /><br />
+
+        <ul id="lista" type="square">
+            <li>Lista</li>
+            <li>Lista outra</li>
+            <li>Lista outra outra</li>
+        </ul>
+    </body>
+</html>

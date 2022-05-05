@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8" />
+
+    <head>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+
+        <title>IMC</title>
+
+        <script type="text/javascript">
+            function Clear() {
+                document.getElementById("Ps").innerHTML = "";
+                document.getElementById("As").innerHTML = "";
+            }
+
+            function Pag(i) {
+                var link;
+
+                switch (i) {
+                    case 0:
+                        link =
+                            "https://womenshealthbrasil.com.br/wp-content/uploads/sites/6/2018/06/vontade-de-comer-doce-696x445.jpg";
+                        break;
+
+                    case 1:
+                        link =
+                            "https://hypescience.com/wp-content/uploads/2011/05/positivo-838x629.jpg";
+                        break;
+
+                    case 2:
+                        link =
+                            "https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.tudogostoso.com.br%2Fnoticias%2Femagrecer-evite-consumir-mesma-comida-todo-dia%2F&psig=AOvVaw0hXaaqxkD4jO_udEG2IAOd&ust=1645820643335000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCLDzmemVmfYCFQAAAAAdAAAAABAD";
+                        break;
+
+                    case 3:
+                        link =
+                            "https://conteudo.imguol.com.br/c/entretenimento/7a/2017/09/29/comer-salada-dieta-comer-bem-1506731379264_v2_900x506.jpg.webp";
+                        break;
+
+                    case 4:
+                        link =
+                            "https://www.google.com/url?sa=i&url=https%3A%2F%2Fabeso.org.br%2Fobesidade-se-previne-com-dieta%2F&psig=AOvVaw2h7_TrkcvzDciWvTLf2jgD&ust=1645820549379000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCKiEu7yVmfYCFQAAAAAdAAAAABAJ";
+                        break;
+
+                    case 5:
+                        link =
+                            "https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.freepik.com%2Ffotos%2Fmudo&psig=AOvVaw2T1dUeMPxGfO0wfmezpRaV&ust=1645820680737000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCMDl1fuVmfYCFQAAAAAdAAAAABAD";
+                        break;
+                }
+
+                window.open(link);
+            }
+
+            function Se(imc) {
+                if (imc < 18.5) {
+                    return 0;
+                }
+                if (imc >= 18.5 && imc < 25) {
+                    return 1;
+                }
+                if (imc >= 25 && imc < 30) {
+                    return 2;
+                }
+                if (imc >= 30 && imc < 35) {
+                    return 3;
+                }
+                if (imc >= 35 && imc < 40) {
+                    return 4;
+                }
+                if (imc >= 40) {
+                    return 5;
+                }
+            }
+
+            function Resp(i) {
+                var RODA = [
+                    "Abaixo do baixo",
+                    "Tabom",
+                    "Grau 0",
+                    "Grau 1",
+                    "Grau 2",
+                    "Grau 3",
+                ];
+                document.getElementById("R").innerHTML = RODA[i];
+
+                Pag(i);
+            }
+
+            function Calcular() {
+                Clear();
+
+                var p, a;
+                var imc;
+
+                p = document.getElementById("P").value;
+                a = document.getElementById("A").value;
+
+                imc = p / (a * a);
+
+                if (p != "") {
+                    if (a != "") {
+                        var aux = Se(imc);
+                        Resp(Se(imc));
+                    } else {
+                        document.getElementById("As").innerHTML =
+                            "Diga sua altura ;p";
+                        document.getElementById("As").style.color = "red";
+                        document.getElementById("As").style.fontSize = "15px";
+                    }
+                } else {
+                    document.getElementById("Ps").innerHTML =
+                        "Diga sua peso ;p";
+                    document.getElementById("Ps").style.color = "red";
+                    document.getElementById("Ps").style.fontSize = "15px";
+                }
+            }
+
+            function oj() {
+                if (document.getElementById("d").checked) {
+                    document.getElementById("jo").style.color = "white";
+                    document.getElementById("jo").style.backgroundColor =
+                        "black";
+                } else {
+                    document.getElementById("jo").style.color = "black";
+                    document.getElementById("jo").style.backgroundColor =
+                        "white";
+                }
+            }
+
+            function ke() {
+                var ko = document.getElementById("k").value;
+                document.getElementById("kt").textContent = ko;
+            }
+        </script>
+    </head>
+
+    <body id="jo">
+        <p style="font-size: large">Cálculo de IMC :)</p>
+        <form>
+            <div>Peso!</div>
+            <input type="text" id="P" />
+            <div id="Ps"></div>
+
+            <br />
+
+            <div>Altura!</div>
+            <input type="text" id="A" />
+            <div id="As"></div>
+
+            <br /><br />
+
+            <input type="button" value="sou um botao" onclick="Calcular();" />
+
+            <br />
+
+            <input type="range" id="k" onchange="ke()" min="0" max="100" /><span
+                id="kt"
+                >0</span
+            >
+
+            <br />
+
+            <div class="form-check form-switch">
+                <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="d"
+                    onchange="oj()"
+                />
+            </div>
+
+            <br /><br /><br />
+
+            <div id="R"></div>
+        </form>
+    </body>
+</html>

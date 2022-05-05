@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <meta charset="utf-8" />
+
+    <head>
+        <script type="text/javascript">
+            //var n = 0;
+
+            function defineTitPag() {
+                //n++;
+
+                var titPag = document.getElementById("titPag").value;
+                var tituloP = document.createElement("p");
+                //tituloP.id = "n" + n;
+                var titulo = document.createTextNode(titPag);
+                var tituloDiv = document.getElementById("titulo");
+
+                tituloP.appendChild(titulo);
+                tituloDiv.appendChild(tituloP);
+
+                //defTam();
+            }
+
+            function defColor(num) {
+                var i = 0;
+                var text = document.getElementsByTagName("p");
+                var color = document.getElementById("cor");
+
+                while (i <= text.length) {
+                    text[i].style.color = color.value;
+                    i++;
+                }
+            }
+
+            /*
+        function dfTam()
+        {
+            var text = document.getElementById("n" + n);
+            var tam = document.getElementById("tam");
+            text.style.fontSize = tam.value;
+        }
+        */
+
+            function line() {
+                var lin = document.createElement("hr");
+                var linhazinha = document.getElementById("linha");
+                linhazinha.appendChild(lin);
+            }
+        </script>
+    </head>
+
+    <body onload="line();">
+        <div id="titulo"></div>
+        <div id="linha"></div>
+
+        <br />
+
+        <form>
+            <input type="text" id="titPag" /><br />
+            <input type="color" onchange="defColor();" id="cor" />
+            <input type="number" id="tam" />
+
+            <input type="button" value="oka" onclick="defineTitPag();" />
+        </form>
+    </body>
+</html>
