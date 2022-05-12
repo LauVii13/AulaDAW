@@ -1,8 +1,8 @@
 <HTML>
-    <HEAD>
-        <TITLE>A Linguagem Php</TITLE>
-    </HEAD>
-    <BODY>
+    <Head>
+        <Title>A Linguagem Php</Title>
+    </Head>
+    <Body>
         
 <?php
 
@@ -67,6 +67,7 @@
     echo $_SERVER["SCRIPT_NAME"] . "<BR>";
 
     echo $_GET["x"]; //precisaremos passar o x na URL
+    echo "<BR>";
     echo $_GET["y"]; //precisaremos passar o x na URL
     //url?x=xxx&y=yyyyy
 
