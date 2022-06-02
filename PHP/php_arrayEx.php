@@ -88,4 +88,4 @@
 //implode - junta um array em string add um texto nos limites
     /* $cursos = array("Informática","Edificações","Enfermagem");
 	$str = implode(" | ", $cursos);
-	print_r($str); */
+	print_r($str);  */
