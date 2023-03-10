@@ -1,0 +1,92 @@
+/* Tamanho referente ao iPhone XR */
+
+@media only screen and 
+(min-width: 320px) and 
+(max-width: 480px)
+{
+
+/*Tags gerais*/
+video {
+
+	width: 100%;
+
+}
+
+table {
+
+	margin-left: 2ex; 
+
+}
+
+button {
+
+	width: 20ex;
+
+}
+
+.icone img {
+
+	max-width:3.5ex;
+    max-height:3.5ex;
+    width: auto;
+    height: auto;
+
+}
+
+/*Classes
+.menu {
+	
+
+	flex-wrap: wrap;
+
+}
+
+.texto {
+
+	font-size: 2ex;
+
+}
+
+
+.geral {
+
+	flex-direction: column;
+	display: block;
+
+}
+
+.volta {
+
+	margin-right: 20ex;
+
+}
+
+.click {
+
+	width: 40ex;
+
+}
+
+.caixinha {
+
+	width: 40ex;
+
+}
+
+/*IDs*/
+
+.table-responsive{
+	width: 5% !important;
+  }
+  .table {
+	width: 25% !important;
+
+}
+
+.navbar-brand{
+	width: 100%;
+}
+
+}
+
+

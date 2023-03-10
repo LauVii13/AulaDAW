@@ -1,0 +1,77 @@
+/* Tamanho referente ao iPad Pro */
+
+@media only screen and 
+(min-width: 1024px) and 
+(max-width: 1366px)
+{
+
+/*Tags gerais*/
+
+
+table {
+
+	margin-left: 59ex; 
+
+}
+
+
+.espacamento {
+
+	margin-top: 15ex;
+
+}
+
+/*Classes*/
+.menu {
+	
+	flex-wrap: wrap;
+
+}
+
+.geral {
+
+	flex-direction: column;
+	display: block;
+
+}
+
+.volta {
+
+	margin-right: 45ex;
+}
+
+/*IDs*/
+#footinicio {
+
+	margin-top: 45ex;
+
+}
+
+#footcontato {
+
+	margin-top: 10ex;
+
+}
+
+#lista {
+
+	width: 55ex;
+
+}
+
+
+#video {
+
+	border-style: dashed;
+	border-color: #A25309;
+	border-spacing: 100ex;
+	border-width: 0.5ex;
+	margin-top: 5ex; 
+	margin-right: 2.25ex;
+	height: 28ex;
+	width: 50ex;
+	float: right;
+
+}
+	
+}

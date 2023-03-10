@@ -1,0 +1,459 @@
+/*TITULO*/
+
+.tit {
+
+	background: linear-gradient(to right, #FAB355, #F1943C, #F1943C, #F1943C, #FAB355); 
+	color: white;
+	font-family: 'Lobster', cursive;
+	font-size: 10ex;
+	font-weight: normal;
+	padding-bottom: 0.08ex; 
+	text-align: center;
+	text-shadow: 15px 10px 10px rgba(211,211,211,.5);
+	
+}
+
+/*SUBTITULO*/
+.subtit {
+
+	background: linear-gradient(to right, #FAB355, #F1943C, #F1943C, #F1943C, #FAB355);
+	color: white;
+	font-family: 'Lobster', cursive;
+	font-size: 4ex;
+	font-weight: normal;
+	padding-bottom: 0.5ex; 
+	text-align: center;
+
+}
+
+
+/*LINKS - (barra de navegação)*/
+div.bar {
+
+	color: white;
+	text-align: center;
+	margin: .1ex;
+	padding: 1ex;
+
+}
+
+a.bar {
+
+	text-decoration: none;
+
+}
+
+/*CONFIGURAÇÃO LINKS - (cores e interações da barra de navegação)*/
+.bar:hover {
+
+	background-color: #A25309;
+	text-decoration: none;
+	text-align: center;
+	border-radius: .5ex;
+	transform: scale(1.01,1.01);
+
+}
+
+.menu {
+
+	background-color: #E37C1C;
+	color: #A25309;
+	font-size: 2ex;
+	font-weight: bolder;
+	padding: .5ex;
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.rodape {
+
+	background-color: #E37C1C;
+	color: #A25309;
+	font-size: 2ex;
+	font-weight: bolder;
+	padding-left: 2ex;
+	margin: 0ex;
+	padding-bottom: 0.08ex; 
+	text-align: justify;
+
+}
+
+/*ÂNCORA - (botão voltar) e link do site oficial*/
+.volta {
+
+	position: static;
+
+	color: #A25309;
+	text-decoration: none
+
+}
+
+.tudogostoso {
+
+	color: #1038be;
+	text-decoration: none;
+
+
+}
+
+/*FORMATAÇÃO GERAL*/
+
+body {
+
+	background-color: papayawhip !important;
+	font-family: 'Comfortaa', cursive;
+
+
+}
+
+
+/*Animacao tela inicial e outras*/
+#tudo {
+
+	margin: 2ex;
+	line-height: 170%;
+	text-align: justify;
+
+}
+
+#tudo p.a {
+
+	animation: fadeInLeft;
+	animation-duration: 1.25s;
+
+}
+
+#tudo p.b {
+
+	animation: fadeInLeft;
+	animation-duration: 2.5s;
+
+}
+
+#tudo p.c {
+
+	animation: fadeInLeft;
+	animation-duration: 3s;
+
+}
+
+#tudo p.d {
+
+	animation: fadeInLeft;
+	animation-duration: 3.5s;
+
+}
+
+#tudo p.e {
+
+	animation: fadeInLeft;
+	animation-duration: 3.5s;
+
+}
+
+.titanime {
+
+	animation: backInDown;
+	animation-duration: 1.5s;
+
+}
+
+
+.icone img {
+
+	max-width:7ex;
+    max-height:7ex;
+    width: auto;
+    height: auto;
+
+}
+
+.icone img:hover {
+
+	animation: animacao1 3s;
+
+}
+
+@keyframes animacao1 {
+
+	0% {transform:rotate(0deg);}
+  	20% {transform:rotate(20deg);}
+  	40% {transform:rotate(-20deg);}
+  	60% {transform:rotate(20deg);}
+  	80% {transform:rotate(-20deg);}
+  	100% {transform:rotate(0deg);}
+
+}
+
+/*Formatação hr */
+
+hr {
+
+	border-top: 2px dashed #A25309;
+    height: 1px;
+
+}
+
+
+/*RECEITAS - INGREDIENTES - VÍDEO - TABELA NUTRICIONAL*/
+
+/*LISTA - (ingredientes)*/
+#lista {
+
+	float: left;
+
+	list-style-image: url("imagens/bake.ico");
+
+}
+
+/*VÍDEO*/
+.embed-responsive-item{
+	border-style: dashed;
+	border-color: #A25309;
+
+	border-width: 0.5ex;
+	width: 75%;
+	margin-top: 1%;
+	margin-left: 12%;
+}
+
+.embed-responsive{
+
+	border-width: 0.5ex;
+	float: center;	
+	margin:auto;
+
+}
+
+
+/*TABELA - (valor nutricional)*/
+
+.table-responsive{
+	width: 100% !important;
+  }
+  
+  .table {
+	  width: 85% !important;
+	  margin: auto;
+  }
+
+
+thead {
+
+	background-color: salmon;
+
+}
+
+tr {
+
+	height: 3.75ex;
+
+}
+
+#topictable {
+
+	background-color: rgba(	255,160,122,.7);
+	text-align: center;
+
+}
+
+
+/*FORMULÁRIO - (aba de contato)*/
+
+div.ftfundo {
+
+	background-image: url("imagens/chocolate.png");
+	background-repeat: no-repeat;
+	background-size: 120%;
+
+}
+
+
+
+fieldset {
+
+	border-color: #A25309;
+	border-style: ridge;
+	border-radius: 4.5ex;
+	padding-left: 5ex;
+
+}
+
+
+.sabor {
+
+	border-radius: 2ex;
+	border-color: #A25309;
+	border-width: .3ex;
+	padding-bottom: 1ex;
+	padding-top: 1ex;
+	padding-left: 1ex;
+	width: 35%;
+	font-family: 'Comfortaa', cursive;
+	background-color: 	#faf7e8ab;
+
+}
+
+.caixinha {
+
+	font-family: 'Comfortaa', cursive;
+	border-radius: 2ex;
+	border-color: #A25309;
+	border-width: .3ex; 
+	width: 99% !important;
+	padding-bottom: 1ex;
+	padding-top: 1ex;
+	padding-left: 1ex;
+	background-color: #faf7e8ab;
+	max-height:40ex;
+
+}
+
+
+.click {
+
+	border-radius: 2ex;
+	border-color: #A25309;
+	border-width: .3ex;
+	width: 98% !important;
+	padding-bottom: 1ex;
+	padding-top: 1ex;
+	padding-left: 1ex;
+	font-family: 'Comfortaa', cursive;
+	background-color: 	#faf7e8ab;
+
+}
+
+.click:focus {
+
+	outline: none;
+	background-color: white;
+	border-color: #f0ccaa;
+	padding: 1.2ex;
+	box-shadow: 1ex 1ex .75ex 0.2ex #bfb097;
+
+}
+
+.sabor:focus {
+
+	outline: none;
+	background-color: white;
+	border-color: #f0ccaa;
+
+}
+
+.caixinha:focus {
+
+	outline: none;
+	background-color: white;
+	border-color: #f0ccaa;
+	padding:1.2ex;
+	box-shadow: 1ex 1ex .75ex 0.2ex #bfb097;
+
+}
+
+/*BOTÕES*/
+
+
+button {
+
+	background-color: #E37C1C;
+	color: white;
+	width: 25ex;
+	height: 8ex;
+	font-family: 'Comfortaa', cursive;
+	border-radius: 10ex;
+	border-width: .4ex;
+	border-color: #A25309;
+
+}
+
+button:focus {
+
+	background-color: #ce7228;
+	border-radius: 3ex;
+	outline: none;
+
+}
+
+button:hover {
+
+	background-color: #ce7228;
+	border-radius: 3ex;
+
+}
+
+
+
+.redesocial {	
+
+	display: flex;
+	justify-content: space-between;
+	padding-top: 1ex;
+	margin-top: 2.5ex;
+	
+}
+
+
+
+/*
+Duas fontes usadas para o trabalho
+ - titulos = font-family: 'Lobster', cursive;
+ - os demais = font-family: 'Comfortaa', cursive;
+*/
+
+.dropdown-menu{
+	color: rgb(233, 184, 94);
+}
+
+.dropdown-menu .dropdown-item{
+
+	color: white;
+	background-color: rgb(233, 184, 94);
+	border-bottom: solid #df9855 .2ex;
+	height: 5ex;
+
+}
+
+.dropdown-menu .dropdown-item:hover {
+
+	background-color: rgba(224, 165, 55, 0.514);
+	color: white;
+}
+
+.dropdown-menu .dropdown-item:active{
+	background-color: rgb(214, 147, 21);
+}
+
+
+body::-webkit-scrollbar {
+	width: 1.5ex;
+} 
+  
+body::-webkit-scrollbar-thumb {   
+	background-color: #ca7e36;   
+}
+
+.accordion{
+	border:none !important;
+}
+.accordion-item  {
+	background:  rgb(252, 244, 230)!important;
+	width: 100% !important;
+    text-decoration: none !important;
+
+}
+
+.accordion-button {
+	background-color: rgba(245, 198, 167, 0.7)  !important;
+	border:none !important;
+}
+
+.navbar-toggler{
+	width: 25% !important;
+	height: 5ex !important;
+}
+
+
+
