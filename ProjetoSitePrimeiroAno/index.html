@@ -17,11 +17,17 @@
 		<!-- Links da Web -->
 		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lobster&display=swap" rel="stylesheet">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+  		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+  		<!--Link Font Awesome-->
+  		<script src="https://kit.fontawesome.com/df7aeadace.js" crossorigin="anonymous"></script>
+  	
 
 		<!-- Links Animações -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-		<!-- Botao Form -->
+		<!-- Botao Form e Font Awesome -->
 		<style type="text/css">
 			.botaoForm {
 
@@ -33,10 +39,11 @@
 			border-radius: 10ex;
 			border-width: .4ex;
 			border-color: #A25309;
+
 			}
 
 		</style>
-
+		
 		<!-- Titulo -->
 		<title>Bolos e Delícias</title>
 
@@ -51,7 +58,7 @@
 		
 			<!-- Menu -->
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#" style="color:white;"><img src="imagens/Fav.ico" alt="Menu" width="30" height="30" class="d-inline-block align-text-top">Menu | Navegue pelo site:</a>
+				<a class="navbar-brand" href="#" style="color:white;"><img src="imagens/Fav.ico" alt="Menu" width="30" height="30" class="d-inline-block align-text-top"> Menu | Navegue pelo site:</a>
 
 				<!-- Botao da tela Pequena -->
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,10 +75,10 @@
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">Receitas</a>
 
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="receitas/Receita1.html">Bolo de Chocolate</a></li>
-								<li><a class="dropdown-item" href="receitas/Receita2.html">Bolo Gelado</a></li>
-								<li><a class="dropdown-item" href="receitas/Receita3.html">Bolo de Banana</a></li>
-								<li><a class="dropdown-item" href="receitas/Receita4.html">Bolo de Cenoura</a></li>
+								<li><a class="dropdown-item" href="receitas/Receita1.html"><i class="fas fa-mortar-pestle"></i> Bolo de Chocolate</a></li>
+								<li><a class="dropdown-item" href="receitas/Receita2.html"><i class="fas fa-mortar-pestle"></i> Bolo Gelado</a></li>
+								<li><a class="dropdown-item" href="receitas/Receita3.html"><i class="fas fa-mortar-pestle"></i> Bolo de Banana</a></li>
+								<li><a class="dropdown-item" href="receitas/Receita4.html"><i class="fas fa-mortar-pestle"></i> Bolo de Cenoura</a></li>
 							</ul>
 						</li>
 
@@ -92,54 +99,126 @@
 			</div>
 		</nav>
 
-		<!-- Texto - Box Inicial -->
-		<div class="p-5 rounded-lg" style="background-color: papayawhip;">
-
-			<h1 class="display-5">Saudações, Confeiteiros!</h1>
-			
-			<p class="lead">
-				<strong>Aqui você virá a encontrar receitas de uma variedade de bolos desenvolvida por nós da "Bolos e Delícias" que com certeza chamará sua atenção.</strong></p>
-			
-			<p>
-				Criamos este site com o intuito de facilitar o contato da "Bolos e Delícias" com os nossos clientes. Para isso, disponibilizamos nossas principais receitas, estritamente detalhadas, passo a passo, através de vídeos e instruções... e para quem sempre está de olho nas calorias, não podia faltar a tabela nutricional do bolo em questão ;D</p>
-			
-			<p>
-				Caso goste de nossas receitas, você pode fazer seu próprio bolo, ou, para quem não se dá muito bem com a cozinha mas ainda assim gosta de comer, use nosso menu para navegar até a aba "Contato", onde você poderá fazer seu pedido.</p>
-			
-			<p class="lead">
-				Então Boleiros... Mãos na massa! E depois, deliciem-se com seus bolos.</p>
-			
-			<br>
-
-			<!-- Imagens -->
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col col-lg-6 col-md-auto col-sm-auto" style="margin: auto;">
-						<img id="ftamar" class="border border-5 border-warning" src="imagens/int1.png" width="100%">
-					</div>
-
-				</div>
+		<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+			  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
 			</div>
-		</div>
+			<center>
+			<div class="carousel-inner" style="width: 47.5%; margin-top: 7.5ex; border-style: solid; border-color: darkorange;">
 
+				<button class="carousel-control-prev" type="button" id = "crss" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" style="margin-top: 28%;">
+					<span class="carousel-control-prev-icon"  aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				  </button>
+
+				  <button class="carousel-control-next" type="button"  id = "crss"  data-bs-target="#carouselExampleCaptions" data-bs-slide="next" style="margin-top: 28%;">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				  </button>
+			  <div class="carousel-item active">
+				<img src="imagens/int1.png" class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+				  <h5>Bolos e Delícias!</h5>
+				  <p>Sempre perto e conectado a você, trazendo os melhores bolos de onde quer que você esteja!</p>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<img src="imagens/int2.png" class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+				  <h5>Receitas!</h5>
+				  <p>As melhores receitas para adoçarem o seu dia!</p>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<img src="imagens/int4.jpg" class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+				  <h5>Faça seu Pedido!</h5>
+				  <p>Acesse nossa aba de contato e escolha um de nossos produtos que será entregue em sua casa!</p>
+				</div>
+				
+			  </div>
+			</div>
+			
+		  </div>
+		</center>
+
+ <br><br>
+
+<div id="about-area">
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-12">
+  				<h3 class="main-title" style="text-decoration: underline;text-decoration-style: dashed; font-family: 'Lobster', cursive; color:rgb(37, 37, 37)"><b>Sobre a Bolos e Delícias</b></h3>
+  			</div>
+  			
+  			
+
+
+  			<div class="col-md-6" style="margin-top: 1.25ex;">
+  				<h3 class="about-title">Saudações, Confeiteiros!</h3>
+  				<p style="font-family: Open Sans; text-align: justify;"><b>Aqui você virá a encontrar receitas de uma variedade de bolos desenvolvida por nós da "Bolos e Delícias" que com certeza chamará sua atenção.</b></p>
+  				<p style="font-family: Open Sans; text-align: justify;"><b>Criamos este site com o intuito de facilitar o contato da "Bolos e Delícias" com os nossos clientes. Para isso, disponibilizamos nossas principais receitas, estritamente detalhadas, passo a passo, através de vídeos e instruções... e para quem sempre está de olho nas calorias, não podia faltar a tabela nutricional do bolo em questão ;D</b></p>
+  				<p style="font-family: Open Sans; text-align: justify;"><b>Caso goste de nossas receitas, você pode fazer seu próprio bolo, ou, para quem não se dá muito bem com a cozinha mas ainda assim gosta de comer, use nosso menu para navegar até a aba "Contato", onde você poderá fazer seu pedido.</b></p>
+  				<h6 class="about-title">Então Boleiros... Mãos na massa! E depois, deliciem-se com seus bolos.</h6><br><br>
+  			</div>
+
+			<div class="col-md-1"></div>
+			<div class="col-md-5">
+				<img class="img-fluid" src="imagens/boooooli.png" alt="Sobre a empresa">
+			</div>
+
+		  <div class="col-md-5">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13129.883140716343!2d-47.406851854167364!3d-22.562301134995383!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x457e41262c3b4198!2sCasa%20de%20Bolos%20(Lg.%20Boa%20Morte)%20Limeira!5e0!3m2!1spt-BR!2sbr!4v1630869555606!5m2!1spt-BR!2sbr" height="100%" width="100%" style="border:solid .75ex; border-color: darkorange; margin-top: 2ex; border-radius: 5ex;" allowfullscreen="" loading="lazy"></iframe>
+		  </div>
+
+		  <div class="col-md-1"></div>
+			<div class="col-md-6" style="margin-top: 1.25ex;">
+				<br>
+				<h3 class="about-title">Venha já visitar nossa loja física!</h3>
+				<p style="font-family: Open Sans; text-align: justify;"><b>Venha visitar nossa loja física para ter acesso ao mais variados sabores de bolos com descontinhos especiais! Então não perca tempo e vá até a loja mais próxima de você! </b></p>
+			</div>
+
+			
+</div>
+  		</div>
+  		</div>
+    </div>
+
+    <br><br>
 		
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
-
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+	
 	</body>
 
 	<footer>
 
+		<div class="container-fluid rodape" align="center">  
+			<strong><span style="font-size: 4ex;">REDES SOCIAIS</span></strong>
+			<br>
+			
+			<div class="redesocial">
+					<div class="icone"><a href="https://www.youtube.com/user/tudogostoso/featured" target="_blank" style="margin-right: 2ex;"><i class="fab fa-youtube"></i></a></div>
+				
+					<div class="icone"><a href="https://pt-br.facebook.com/tudogostoso/" target="_blank" style="margin-right: 2ex;"><i class="fab fa-facebook"></i></a></div>
+				
+					<div class="icone"><a href="https://www.instagram.com/tudogostosooficial/?hl=pt-br" target="_blank"><i class="fab fa-instagram"></i></a></div>
+				</div>
+		</div>
+
+		<!---
 		<div id="footinicio" class="rodape">
 			
 			<div class="redesocial">
 
 				<p class="fs-3" style="color: white; text-align: left;">Acesse nossas redes sociais:</p>
-				<div class="icone"><a href="https://www.youtube.com/user/tudogostoso/featured" target="_blank"><img src="imagens/youtube.png"></a></div>
+				<div class="icone"><a href="https://www.youtube.com/user/tudogostoso/featured" target="_blank"><i class="fab fa-youtube"></i></a></div>
 
-				<div class="icone"><a href="https://pt-br.facebook.com/tudogostoso/" target="_blank"><img src="imagens/facebook.png"></a></div>
+				<div class="icone"><a href="https://pt-br.facebook.com/tudogostoso/" target="_blank"><i class="fab fa-facebook"></i></a></div>
 
-				<div class="icone"><a href="https://www.instagram.com/tudogostosooficial/?hl=pt-br" target="_blank"><img src="imagens/instagram.png"></a></div>
+				<div class="icone"><a href="https://www.instagram.com/tudogostosooficial/?hl=pt-br" target="_blank"><i class="fab fa-instagram"></i></a></div>
 
 				<div class="icone"></div> <div class="icone"></div> <div class="icone"></div>
 			
@@ -151,6 +230,7 @@
 				O conteúdo não é de nossa autoria, essas informações foram retiradas do site: <a href="https://www.tudogostoso.com.br/" target="_blank" class="tudogostoso"><i>Tudo Gostoso</i></a></p>
 
 		</div>
+		--->
 
 	</footer>
 

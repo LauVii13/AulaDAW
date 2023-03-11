@@ -66,6 +66,7 @@ a.bar {
 
 }
 
+/*
 .rodape {
 
 	background-color: #E37C1C;
@@ -78,6 +79,16 @@ a.bar {
 	text-align: justify;
 
 }
+*/
+.rodape {
+
+	background-color: #E37C1C;
+	color: white;
+	padding: 30px;
+	height: 150px;
+	align-self: flex-end;
+
+}
 
 /*ÂNCORA - (botão voltar) e link do site oficial*/
 .volta {
@@ -85,7 +96,7 @@ a.bar {
 	position: static;
 
 	color: #A25309;
-	text-decoration: none
+	text-decoration: none;
 
 }
 
@@ -103,7 +114,6 @@ body {
 
 	background-color: papayawhip !important;
 	font-family: 'Comfortaa', cursive;
-
 
 }
 
@@ -160,16 +170,8 @@ body {
 }
 
 
-.icone img {
 
-	max-width:7ex;
-    max-height:7ex;
-    width: auto;
-    height: auto;
-
-}
-
-.icone img:hover {
+.icone:hover {
 
 	animation: animacao1 3s;
 
@@ -202,7 +204,6 @@ hr {
 #lista {
 
 	float: left;
-
 	list-style-image: url("imagens/bake.ico");
 
 }
@@ -265,7 +266,7 @@ div.ftfundo {
 
 	background-image: url("imagens/chocolate.png");
 	background-repeat: no-repeat;
-	background-size: 120%;
+	background-size: 200ex;
 
 }
 
@@ -301,45 +302,38 @@ fieldset {
 	border-radius: 2ex;
 	border-color: #A25309;
 	border-width: .3ex; 
-	width: 99% !important;
+	width: 100% !important;
 	padding-bottom: 1ex;
 	padding-top: 1ex;
 	padding-left: 1ex;
-	background-color: #faf7e8ab;
+	background-color: #ffffffce;
 	max-height:40ex;
 
 }
 
 
-.click {
+.form-control.click {
 
 	border-radius: 2ex;
 	border-color: #A25309;
 	border-width: .3ex;
-	width: 98% !important;
+	/*width: 98% !important;*/
 	padding-bottom: 1ex;
 	padding-top: 1ex;
 	padding-left: 1ex;
 	font-family: 'Comfortaa', cursive;
-	background-color: 	#faf7e8ab;
+	background-color: #ffffffce;
 
 }
 
-.click:focus {
+.form-control.click:focus {
 
 	outline: none;
 	background-color: white;
-	border-color: #f0ccaa;
-	padding: 1.2ex;
+	border-color: #d8aa7f;
+	padding:1.2ex;
 	box-shadow: 1ex 1ex .75ex 0.2ex #bfb097;
 
-}
-
-.sabor:focus {
-
-	outline: none;
-	background-color: white;
-	border-color: #f0ccaa;
 
 }
 
@@ -347,7 +341,7 @@ fieldset {
 
 	outline: none;
 	background-color: white;
-	border-color: #f0ccaa;
+	border-color: #d8aa7f;
 	padding:1.2ex;
 	box-shadow: 1ex 1ex .75ex 0.2ex #bfb097;
 
@@ -355,6 +349,78 @@ fieldset {
 
 /*BOTÕES*/
 
+button#crss:hover{
+	background-color: rgba(200,200,200,0);
+	border-radius: 3ex;
+}
+
+button#crss:focus{
+	background-color: rgba(200,200,200,0);
+	border-radius: 3ex;
+}
+
+#btd1{
+	background-color: #E37C1C;
+	color: white;
+	width: 25ex;
+	height: 8ex;
+	font-family: 'Comfortaa', cursive;
+	border-top-left-radius: 10ex;
+	border-bottom-left-radius: 10ex;
+	border-width: .4ex;
+	border-color: #A25309;
+}
+
+
+#btd2{
+	background-color: #E37C1C;
+	color: white;
+	width: 25ex;
+	height: 8ex;
+	font-family: 'Comfortaa', cursive;
+	border-top-right-radius: 10ex;
+	border-bottom-right-radius: 10ex;
+	border-width: .4ex;
+	border-color: #A25309;
+}
+
+#btd1:focus {
+
+	background-color: #ce7228;
+	border-top-left-radius: 3ex;
+	border-bottom-left-radius: 3ex;
+	box-shadow: none;
+
+}
+
+#btd2:focus {
+
+	background-color: #ce7228;
+	border-top-right-radius: 3ex;
+	border-bottom-right-radius: 3ex;
+	box-shadow: none;
+
+}
+
+#btd1:hover {
+
+	background-color: #ce7228;
+}
+
+#btd2:hover {
+
+	background-color: #ce7228;
+}
+
+.btn-close:hover{
+	background-color: rgba(200,200,200,0);
+	border-radius: 3ex;
+}
+
+.btn-close:focus{
+	background-color: rgba(200,200,200,0);
+	border-radius: 3ex;
+}
 
 button {
 
@@ -389,9 +455,9 @@ button:hover {
 .redesocial {	
 
 	display: flex;
-	justify-content: space-between;
-	padding-top: 1ex;
-	margin-top: 2.5ex;
+	justify-content: center;
+	
+
 	
 }
 
@@ -437,17 +503,20 @@ body::-webkit-scrollbar-thumb {
 
 .accordion{
 	border:none !important;
+	box-shadow: none !important;
 }
 .accordion-item  {
 	background:  rgb(252, 244, 230)!important;
 	width: 100% !important;
     text-decoration: none !important;
+	box-shadow: none !important;
 
 }
 
 .accordion-button {
 	background-color: rgba(245, 198, 167, 0.7)  !important;
 	border:none !important;
+	box-shadow: none !important;
 }
 
 .navbar-toggler{
@@ -455,5 +524,94 @@ body::-webkit-scrollbar-thumb {
 	height: 5ex !important;
 }
 
+.navbar-toggler-icon{
+
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+
+}
+
+ 
+
+/*Carousel */
+.carousel-inner{
+	
+	border: .75ex;
+	border-radius: 2ex;
+	width: 100%;
+}
+
+.carousel-item {
+
+    background: no-repeat scroll center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+ }
+
+.carousel-item::before {
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.750);
+    opacity: 0.7;
+
+ }
+ 
+
+ /*
+ .carousel-inner .item .img-dep1 {
+    width: auto;
+    height: 200px;
+}
+
+.carousel-inner .item .img-dep2 {
+    width: auto;
+    height: 200px;
+}
+
+.carousel-inner .item .img-dep3 {
+    width: auto;
+    height: 200px;
+}
+*/
+
+#about-area {
+
+  background-color: papayawhip;
 
 
+}
+
+.main-title {
+
+  color: black;
+  margin: 0 0 65px 0;
+  font-size:  40px;
+  text-align: center;
+
+}
+
+.fa-youtube {
+
+	color: white;
+	font-size: 8ex;
+
+}
+
+.fa-facebook {
+
+	color: white;
+	font-size: 8ex;
+
+}
+
+.fa-instagram {
+
+	color: white;
+	font-size: 8ex;
+
+}
